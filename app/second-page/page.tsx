@@ -45,9 +45,7 @@ export default function moonie() {
       >
         <div className="flex flex-col items-center justify-center min-h-screen bg-transparent text-white space-y-6 p-4">
           <h1 className="text-9xl font-bold text-center">Your look alike</h1>
-          <p className="text-xl text-center">
-            "Captured by NASA, revealed just for you."
-          </p>
+          
 
           
           {loading && <p className="text-2xl">Loading your photo...</p>}
@@ -58,21 +56,25 @@ export default function moonie() {
           {/* Display Moon Image */}
           {moonImage && !loading && (
             <div className="mt-6">
+              <p className="text-xl text-center">
+            "Captured by NASA, revealed just for you."
+          </p>
               <img
                 src={moonImage}
                 alt="Moon"
-                className=" transition-opacity duration-100 max-w-96 h-auto border-1 border-white rounded-lg "
+                className=" transition-opacity ease-in-out  duration-1000 max-w-96 h-auto border-1 border-white rounded-lg  content-center"
               />
-              <p className="mt-4 text-lg text-center italic">
+              <p className="mt-4 text-lg text-center">
                 "Behold a planetary vision, just for you!"
               </p>
               
               
             </div>
-          )}
-          <p className="mt-4 text-sm text-center italic">
+          )}{moonImage && !loading && (
+         <p className="mt-4 text-sm text-center italic">
                 "Due to sum technical difficulties the sysytem only can render fraction of your beautiii🥲🥲"
               </p>
+               )}
         </div>
       </Vortex>
     </div>
