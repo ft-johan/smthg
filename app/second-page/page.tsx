@@ -58,7 +58,7 @@ export default function Moonie() {
               <img
                 src={moonImage}
                 alt="Moon"
-                className=" transition-opacity ease-in-out  duration-1000 max-w-96 h-auto border-1 border-white rounded-lg  content-center"
+                className="max-w-96 h-auto border-1 border-white rounded-lg  content-center"
               />
               <p className="mt-4 text-lg text-center">
                 "Behold a planetary vision, just for you!"
