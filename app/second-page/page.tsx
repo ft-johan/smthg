@@ -23,7 +23,7 @@ export default function Moonie() {
         } else {
           setError("No image found.");
         }
-      } catch (err) {
+      } catch (error) {
         setError("Failed to fetch the moon image. Please try again.");
       } finally {
         setLoading(false); // Hide loading spinner
