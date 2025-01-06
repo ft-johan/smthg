@@ -9,11 +9,7 @@ export default function Kromie() {
   const words = ["Magic", "reality", "Truth", "beauty"];
   return (
     <div className="w-full mx-auto rounded-md  h-screen overflow-hidden">
-      <Vortex
-        backgroundColor="black"
-        rangeY={800}
-        particleCount={500}
-        baseHue={120}
+      <div
         className="flex items-center flex-col justify-center px-2 md:px-10  py-4 w-full h-full"
       >
         <div className="h-[40rem] flex justify-center items-center px-4">
@@ -37,7 +33,7 @@ export default function Kromie() {
         
              
             
-      </Vortex>
+      </div>
     </div>
   );
 }

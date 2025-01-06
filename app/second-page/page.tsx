@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import { Vortex } from "@/app/components/ui/vortex";
 
 
 import { useEffect, useState } from "react";
@@ -12,7 +11,7 @@ export default function Moonie() {
 
   useEffect(() => {
     const fetchMoonImage = async () => {
-      const API_KEY = "HKAmltdraL0VfCuPXRAz69BBD90oLSGdFmkXQrft"; // Replace with your NASA API Key
+      const API_KEY = "da2oDD7whdY54tUaIh1xf1U5z0H0Q7F2u6pL2PFw"; // Replace with your NASA API Key
       const BASE_URL = "https://api.nasa.gov/planetary/apod";
 
       try {
@@ -36,11 +35,8 @@ export default function Moonie() {
 
   return (
     <div className="w-full mx-auto rounded-md  h-screen overflow-hidden">
-      <Vortex
-        backgroundColor="black"
-        rangeY={800}
-        particleCount={500}
-        baseHue={120}
+      <div
+        
         className="flex items-center flex-col justify-center px-2 md:px-10  py-4 w-full h-full"
       >
         <div className="flex flex-col items-center justify-center min-h-screen bg-transparent text-white space-y-6 p-4">
@@ -76,7 +72,7 @@ export default function Moonie() {
               </p>
                )}
         </div>
-      </Vortex>
+      </div>
     </div>
   );
 }
