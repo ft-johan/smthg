@@ -51,13 +51,16 @@ export default function Moonie() {
               <p className="text-xl text-center">
               &quot; Captured by NASA, revealed just for you.&quot;
               </p>
+              <div className="w-full flex justify-center items-center p-4">
               <Image
                 src={moonImage}
                 alt="Moon"
-                width={384}
-                height={300}
+                width={1024}
+                height={480}
+                className="rounded-lg shadow-lg border-2 border-gray-300"
+
               />
-             
+             </div>
               <p className="mt-4 text-lg text-center">
               &quot;This is what I see when I think of you—breathtaking, timeless, and out of this world &quot;
               </p>
