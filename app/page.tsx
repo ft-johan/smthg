@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import { Vortex } from "@/app/components/ui/vortex";
 import { FlipWords } from "./components/ui/flip-words";
 import Link from "next/link";
 
