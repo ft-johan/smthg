@@ -5,7 +5,7 @@ import { FlipWords } from "./components/ui/flip-words";
 import Link from "next/link";
 
 
-export default function homie() {
+export default function Kromie() {
   const words = ["Magic", "reality", "Truth", "beauty"];
   return (
     <div className="w-full mx-auto rounded-md  h-screen overflow-hidden">

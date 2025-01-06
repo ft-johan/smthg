@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import Link from "next/link";
 import { useState, useEffect } from "react";
 import { MultiStepLoader as Loader } from "@/app/components/ui/multi-step-loader";
 import { IconSquareRoundedX } from "@tabler/icons-react";
@@ -22,7 +21,8 @@ const loadingStates = [
   },
 ];
 
-export default function homie() {
+export default function Homie() {
+
   const router = useRouter(); // Next.js router instance
 
   const [loading, setLoading] = useState(true);

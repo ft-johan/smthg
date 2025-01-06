@@ -5,7 +5,7 @@ import { Vortex } from "@/app/components/ui/vortex";
 
 import { useEffect, useState } from "react";
 
-export default function moonie() {
+export default function Moonie() {
   const [moonImage, setMoonImage] = useState<string | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
