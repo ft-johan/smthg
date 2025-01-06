@@ -33,9 +33,12 @@ export default function Moonie() {
 
   return (
     <div className="w-full mx-auto rounded-md  h-screen overflow-hidden">
+      <div className="h-screen w-full dark:bg-black bg-white  dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative flex items-center justify-center">
+      {/* Radial gradient for the container to give a faded look */}
+      <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
       <div className="flex items-center flex-col justify-center px-2 md:px-10  py-4 w-full h-full">
         <div className="flex flex-col items-center justify-center min-h-screen bg-transparent text-white space-y-6 p-4">
-          <h1 className="text-9xl font-bold text-center">Your look alike</h1>
+          <h1 className="text-9xl sm:text-9xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 py-8">Your look alike</h1>
 
           {loading && <p className="text-2xl">Loading your photo...</p>}
 
@@ -56,7 +59,7 @@ export default function Moonie() {
               />
              
               <p className="mt-4 text-lg text-center">
-              &quot;Behold a planetary vision, just for you!&quot;
+              &quot;This is what I see when I think of you—breathtaking, timeless, and out of this world &quot;
               </p>
             </div>
           )}
@@ -68,6 +71,8 @@ export default function Moonie() {
           )}
         </div>
       </div>
+    </div>
+      
     </div>
   );
 }
