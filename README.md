@@ -4,6 +4,14 @@
 
 ---
 
+## 🌐 Live Demo
+
+Curious to see the Rizzilator in action? Check out the live demo here:  
+[**Rizzilator Live Demo**](your-live-demo-link-here)
+
+---
+
+
 ## 🚀 What is Rizzilator?
 
 The **Rizzilator** is your ultimate charm weapon—a creative, flirty web app powered by NASA's API that generates stunning pictures of the Moon, cleverly packaged with just the right amount of rizz. No cheesy pickup lines here—just celestial vibes to make their heart orbit around you. 💫
