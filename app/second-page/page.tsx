@@ -38,7 +38,7 @@ export default function Moonie() {
       <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
       <div className="flex items-center flex-col justify-center px-2 md:px-10  py-4 w-full h-full">
         <div className="flex flex-col items-center justify-center min-h-screen bg-transparent text-white space-y-6 p-4">
-          <h1 className="text-9xl sm:text-9xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 py-8">Your look alike</h1>
+          <h1 className="text-5xl md:text-9xl sm:text-9xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 py-8">Your look alike</h1>
 
           {loading && <p className="text-2xl">Loading your photo...</p>}
 
@@ -55,6 +55,7 @@ export default function Moonie() {
               <Image
                 src={moonImage}
                 alt="Moon"
+                layout="responsive"
                 width={1024}
                 height={480}
                 className="rounded-lg shadow-lg border-2 border-gray-300"
@@ -67,7 +68,7 @@ export default function Moonie() {
             </div>
           )}
           {moonImage && !loading && (
-            <p className="mt-4 text-sm text-center italic">
+            <p className="mt-36 md:mt-4 text-sm text-center italic">
               &quot; Due to sum technical difficulties the sysytem only can render
               fraction of your beautiii🥲🥲 &quot;
             </p>

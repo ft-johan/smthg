@@ -11,11 +11,11 @@ export default function Kromie() {
       <div className="h-screen w-full bg-black flex flex-col items-center justify-center overflow-hidden rounded-md">
         <div className="flex items-center flex-col justify-center px-2 md:px-2  py-1 w-full h-full">
           <div className="h-auto flex justify-center items-center px-4">
-            <div className="text-8xl mx-auto font-normal text-neutral-600 dark:text-neutral-400">
+            <div className=" w-full text-center text-3xl md:text-8xl mx-auto font-normal text-neutral-600 dark:text-neutral-400">
               Do U wanna see a
               <FlipWords words={words} /> <br />
               Then click generate
-              <div className="m-10 text-2xl flex justify-center text-center">
+              <div className="m-10 text-xl md:text-2xl flex justify-center text-center">
                 <Link href="/loader">
                   <button className="shadow-[0_0_0_3px_#000000_inset] px-6 py-2 bg-transparent border border-black dark:border-white dark:text-white text-black rounded-lg font-bold transform hover:-translate-y-1 transition duration-400">
                     Generate
